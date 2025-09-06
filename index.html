@@ -1,8 +1,62 @@
 <!doctype html>
-<html>
-<head><meta charset="utf-8"><title>My Channel</title></head>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>unXpected — Mobile Legends Chou Montages. Mostly.</title>
+<meta name="description" content="Chou montages and Mobile Legends highlights. Subscribe for new clips."/>
+<style>
+  :root{--bg:#0f1722;--card:#0b1220;--accent:#ff4d4f;--muted:#94a3b8}
+  html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef6;background:linear-gradient(180deg,#071023 0%,var(--bg) 100%)}
+  .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:36px}
+  .card{width:100%;max-width:920px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03);display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center}
+  .brand{display:flex;flex-direction:column;gap:12px}
+  h1{margin:0;font-size:22px;letter-spacing:-0.2px}
+  p.lead{margin:0;color:var(--muted)}
+  .cta{display:flex;gap:10px;align-items:center;margin-top:10px}
+  .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px}
+  .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#cfe6ff}
+  .thumb-wrap{display:block;position:relative;border-radius:10px;overflow:hidden;box-shadow:0 8px 26px rgba(3,8,20,0.6);border:1px solid rgba(255,255,255,0.03)}
+  .thumb-wrap img{display:block;width:100%;height:auto;vertical-align:middle}
+  .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35));display:flex;align-items:center;justify-content:center}
+  .play svg{fill:#fff;opacity:0.95;margin-left:4px}
+  .meta{font-size:13px;color:var(--muted);margin-top:8px}
+  footer{margin-top:18px;color:var(--muted);font-size:13px}
+  @media (max-width:880px){
+    .card{grid-template-columns:1fr; padding:20px}
+    .thumb-wrap{width:100%;height:auto}
+  }
+</style>
+</head>
 <body>
-<h1>My Channel</h1>
-<p><a href="https://www.youtube.com/MYCHANNEL">Visit channel</a></p>
+<div class="wrap">
+  <main class="card" role="main" aria-labelledby="title">
+    <section class="brand">
+      <h1 id="title">unXpected YouTube</h1>
+      <p class="lead">Mobile Legends Chou Montages. Mostly.</p>
+
+      <div class="cta" aria-hidden="false">
+        <a class="btn" href="https://www.youtube.com/unXpected" target="_blank" rel="noopener">Visit channel</a>
+        <a class="btn ghost" href="https://www.youtube.com/channel/unXpeceted/videos" target="_blank" rel="noopener">All videos</a>
+      </div>
+
+      <p class="meta"></p>
+
+    </section>
+
+    <aside>
+      <a class="thumb-wrap" href="https://www.youtube.com/watch?v=hF9JMPsOJoM" target="_blank" rel="noopener" aria-label="Watch preview on YouTube">
+        <!-- YouTube high quality thumbnail -->
+        <img src="https://img.youtube.com/vi/hF9JMPsOJoM/hqdefault.jpg" alt="Video preview thumbnail"/>
+        <div class="play" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+      </a>
+      <p class="meta" style="margin-top:10px">Chou Montage #24 - Immune Gord, Akai, Kaja and Lord steals!</p>
+    </aside>
+  </main>
+</div>
 </body>
 </html>
